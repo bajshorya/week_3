@@ -1,0 +1,10 @@
+/Users/shoryabaj/Desktop/Hashira/week_3/p2/target/debug/deps/getrandom-e2d544b4ad73d7a1.d: /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/error.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/util.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/error_impls.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/util_libc.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/getentropy.rs
+
+/Users/shoryabaj/Desktop/Hashira/week_3/p2/target/debug/deps/libgetrandom-e2d544b4ad73d7a1.rmeta: /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/lib.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/error.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/util.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/error_impls.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/util_libc.rs /Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/getentropy.rs
+
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/lib.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/error.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/util.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/error_impls.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/util_libc.rs:
+/Users/shoryabaj/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.16/src/getentropy.rs:
