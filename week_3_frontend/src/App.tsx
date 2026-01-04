@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FiSearch, FiRefreshCw, FiExternalLink } from "react-icons/fi";
 import {
   solanaApi,
@@ -33,6 +33,7 @@ function App() {
         const txs = await solanaApi.getTransactionHistory(address);
         setTransactions(txs);
       }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.response?.data || "An error occurred");
       setBalance(null);
@@ -74,12 +75,10 @@ function App() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Reduced opacity gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-slate-900/40 to-slate-900/60"></div>
 
       <div className="relative z-10 h-full">
         <div className="container mx-auto h-full flex flex-col px-4 py-6">
-          {/* Header - Compact */}
           <header className="text-center mb-6 flex-shrink-0">
             <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-300 via-cyan-300 to-purple-300 bg-clip-text text-transparent tracking-tight">
               Solana Explorer
@@ -89,9 +88,7 @@ function App() {
             </p>
           </header>
 
-          {/* Main Card - Fixed height with overflow */}
           <div className="flex-1 max-w-4xl mx-auto bg-white/5 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 overflow-hidden flex flex-col">
-            {/* Search Bar - Compact */}
             <div className="p-4 border-b border-white/10 flex-shrink-0">
               <div className="flex flex-col sm:flex-row gap-3">
                 <div className="flex-1 relative">
@@ -142,7 +139,6 @@ function App() {
               )}
             </div>
 
-            {/* Tabs - Compact */}
             <div className="flex border-b border-white/10 flex-shrink-0">
               <button
                 onClick={() => setActiveTab("balance")}
@@ -172,14 +168,11 @@ function App() {
               </button>
             </div>
 
-            {/* Content Area - Scrollable within fixed height */}
             <div className="flex-1 overflow-hidden p-4">
               {activeTab === "balance" ? (
-                // Balance Tab
                 <div className="h-full">
                   {balance ? (
                     <div className="h-full flex flex-col space-y-4">
-                      {/* Address Card */}
                       <div className="p-4 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-sm rounded-xl border border-white/15 flex-shrink-0">
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
                           <div className="flex-1 min-w-0">
@@ -354,7 +347,6 @@ function App() {
             </div>
           </div>
 
-          {/* Footer - Compact */}
           <footer className="text-center mt-4 text-slate-300 text-xs flex-shrink-0">
             <div className="mb-3">
               <p className="font-medium">

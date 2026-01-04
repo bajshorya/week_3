@@ -12,7 +12,7 @@ pub async fn run() {
         .allow_methods([Method::GET, Method::POST, Method::PUT, Method::DELETE])
         .allow_headers(Any);
 
-    let rpc_url = "https://solana-devnet.g.alchemy.com/v2/JdgL5NilRGmk77B2AI58gSbXf1kZJZHi";
+    let rpc_url = "https://solana-devnet.g.alchemy.com/v2/-lRybe07HTYCR98Xoq_r8";
     let rpc_client = Arc::new(RpcClient::new(rpc_url.to_string()));
 
     let state = AppState { rpc_client };
