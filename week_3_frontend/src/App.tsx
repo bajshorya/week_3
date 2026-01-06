@@ -5,6 +5,8 @@ import {
   type BalanceResponse,
   type TxSignature,
 } from "./services/api";
+import solanaLogo from "./assets/solana-sol-logo.png";
+import bgImage from "./assets/bg.jpg";
 
 function App() {
   const [address, setAddress] = useState<string>("");
@@ -67,9 +69,9 @@ function App() {
 
   return (
     <div
-      className="h-screen overflow-hidden text-white relative"
+      className="h-screen overflow-hidden text-white relative font-tagesschrift"
       style={{
-        backgroundImage: "url('src/assets/bg1.jpg')",
+        backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -80,9 +82,12 @@ function App() {
       <div className="relative z-10 h-full">
         <div className="container mx-auto h-full flex flex-col px-4 py-6">
           <header className="text-center mb-6 flex-shrink-0">
-            <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-300 via-cyan-300 to-purple-300 bg-clip-text text-transparent tracking-tight">
-              Solana Explorer
-            </h1>
+            <div className="text-3xl  mb-2 bg-gradient-to-r from-purple-300 via-cyan-300 to-purple-300  bg-clip-text text-transparent tracking-tight">
+              <h1>
+                <span className="mea-culpa-regular text-5xl">S</span>olana
+                Explorer
+              </h1>
+            </div>
             <p className="text-slate-200 text-sm">
               Check balances and transaction history on Solana Devnet
             </p>
@@ -180,7 +185,7 @@ function App() {
                               Address
                             </p>
                             <div className="flex items-center gap-2">
-                              <p className="font-mono text-sm bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent truncate">
+                              <p className="text-sm bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent truncate">
                                 {shortenAddress(balance.address)}
                               </p>
                               <button
@@ -204,7 +209,6 @@ function App() {
                         </div>
                       </div>
 
-                      {/* Balance Cards */}
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1">
                         <div className="p-4 bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10 backdrop-blur-sm rounded-xl border border-white/15 flex flex-col">
                           <div className="flex items-center gap-2 mb-3">
@@ -215,7 +219,7 @@ function App() {
                               Lamports
                             </p>
                           </div>
-                          <p className="text-2xl font-bold font-mono bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent flex-1 flex items-center">
+                          <p className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-cyan-300 bg-clip-text text-transparent flex-1 flex items-center">
                             {balance.lamports.toLocaleString()}
                           </p>
                           <div className="mt-2 pt-2 border-t border-white/10 text-xs text-slate-400">
@@ -226,7 +230,11 @@ function App() {
                         <div className="p-4 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 backdrop-blur-sm rounded-xl border border-white/15 flex flex-col">
                           <div className="flex items-center gap-2 mb-3">
                             <div className="p-2 bg-cyan-500/20 rounded-lg">
-                              <span className="text-sm">💎</span>
+                              <img
+                                src={solanaLogo}
+                                alt="Solana"
+                                className="w-4 h-4"
+                              />
                             </div>
                             <p className="text-slate-300 font-medium text-sm">
                               SOL Balance
@@ -288,7 +296,7 @@ function App() {
                                       </span>
                                     </div>
                                     <div className="min-w-0 flex-1">
-                                      <p className="font-mono text-xs bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent truncate">
+                                      <p className="text-xs bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent truncate">
                                         {shortenSignature(tx.signature)}
                                       </p>
                                     </div>

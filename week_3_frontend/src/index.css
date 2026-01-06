@@ -1,11 +1,59 @@
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mea+Culpa&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Define font classes */
+.zain-extralight {
+  font-family: "Zain", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.zain-light {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zain-regular {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zain-extrabold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.zain-black {
+  font-family: "Zain", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.zain-light-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zain-regular-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .dm-sans {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
@@ -92,14 +140,54 @@
   font-style: normal;
 }
 
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.tagesschrift-regular {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.mea-culpa-regular {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Set tagesschrift default font for the app */
 body {
-  font-family: "Tagesschrift", system-ui;
+  font-family: "Crimson Text", system-ui;
 }
 
 /* Global font utilities */
 .font-tagesschrift {
-  font-family: "Tagesschrift", system-ui;
-  font-weight: 400;
+  font-family: "Zain", system-ui;
+  font-weight: 600;
   font-style: normal;
 }
